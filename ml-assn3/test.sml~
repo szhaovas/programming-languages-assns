@@ -1,0 +1,10 @@
+datatype child =
+	 ConsC of int
+
+datatype parent =
+	 ConsP of child
+
+fun tester p =
+    case p of
+	ConsC 1 => true
+      | _ => false
